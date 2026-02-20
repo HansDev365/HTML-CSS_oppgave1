@@ -1,0 +1,168 @@
+/* Font-family Cutive Mono*/
+.cutive-mono-regular {
+	font-family: 'Cutive Mono', monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+.cutive-mono-big {
+	font-family: 'Cutive Mono Big', monospace;
+	font-weight: 700;
+	font-style: normal;
+}
+/* Text container*/
+.center {
+	display: flex;
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	text-align: justify;
+}
+/*margin for text and image*/
+.adjust-margin {
+	margin-right: 340px;
+	margin-left: 150px;
+	transform: translateY(-510px);
+}
+/* Image styling */
+.float-right {
+	float: right;
+	max-width: 300px;
+	border-radius: 10px;
+	margin-right: 20px; /* float right image */
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+li a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 400;
+	font-style: bold;
+	padding: 10px;
+}
+body {
+	font-family: 'Cutive Mono', sans-serif;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: url(background.png);
+}
+h1 {
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-align: center;
+	color: rgb(255, 252, 252);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px;
+	text-shadow: 2px 2px 4px rgba(255, 171, 15, 0.5);
+}
+h2 {
+	font-family: 'Cutive Mono', sans-serif;
+	text-align: right;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 50%;
+	padding: 10px;
+	transform: translateY(-455px);
+}
+p1 {
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: justify;
+	text-align-last: center;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+	padding: 5px;
+}
+p2 {
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: justify;
+	text-align-last: center;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 5px;
+}
+p3 {
+	font-family: 'Cutive Mono', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-align: justify;
+	text-align-last: center;
+	color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 400px;
+	margin-top: 50px;
+	padding: 5px;
+}
+div1 {
+	font-size: 35px;
+}
+
+body .spec {
+	color: rgb(254, 239, 23);
+	font-family:
+		Cutive Mono Big,
+		monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: larger;
+	text-align: center;
+	list-style-position: inside;
+}
+
+h1 {
+	font-family: 'Cutive Mono', monospace;
+	font-weight: 700;
+	font-style: normal;
+	text-align: center;
+	color: rgb(255, 252, 252);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li {
+	font-family: 'Cutive Mono', monospace;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	list-style-position: inside;
+	justify-content: left;
+	align-items: left;
+}
+p {
+	font-family: 'Cutive Mono', monospace;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
