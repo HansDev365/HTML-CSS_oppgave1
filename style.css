@@ -1,168 +1,127 @@
-/* Font-family Cutive Mono*/
-.cutive-mono-regular {
-	font-family: 'Cutive Mono', monospace;
-	font-weight: 400;
-	font-style: normal;
-}
-.cutive-mono-big {
-	font-family: 'Cutive Mono Big', monospace;
-	font-weight: 700;
-	font-style: normal;
-}
-/* Text container*/
-.center {
-	display: flex;
-	margin: auto;
-	width: 80%;
-	padding: 10px;
-	text-align: justify;
-}
-/*margin for text and image*/
-.adjust-margin {
-	margin-right: 340px;
-	margin-left: 150px;
-	transform: translateY(-510px);
-}
-/* Image styling */
-.float-right {
-	float: right;
-	max-width: 300px;
-	border-radius: 10px;
-	margin-right: 20px; /* float right image */
+/* style.css */
+
+/* root for global CSS variables and general styles for all pages. The navigation bar styles are in style_nav.css to keep things organized. */
+:root {
+	--text: #f6f7f9;
+	--muted: rgba(246, 247, 249, 0.8);
+	--card: rgba(0, 0, 0, 0.58);
+	--border: rgba(255, 255, 255, 0.14);
 }
 
-li {
-	list-style-type: none;
-	display: inline-block;
-}
-
-li a {
-	text-decoration: none;
-	color: rgb(255, 255, 255);
-	font-family: 'Cutive Mono', sans-serif;
-	font-weight: 400;
-	font-style: bold;
-	padding: 10px;
-}
 body {
-	font-family: 'Cutive Mono', sans-serif;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background-image: url(background.png);
+	font-family: 'Cutive Mono', monospace;
+	color: var(--text);
+	line-height: 1.6;
+
+	/* Background image for all pages */
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url('background.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
-h1 {
-	font-family: 'Cutive Mono', sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	text-align: center;
-	color: rgb(255, 252, 252);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 50px;
-	margin: 0 auto;
-	width: 50%;
-	padding: 10px;
-	text-shadow: 2px 2px 4px rgba(255, 171, 15, 0.5);
+
+.page {
+	max-width: 980px;
+	margin: 28px auto 60px;
+	padding: 0 18px;
 }
+
+.card {
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 18px;
+	padding: 22px;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+/* Every card that has another card right before it should get space on top to separate them visually. This is done with the adjacent sibling selector in CSS, which targets any .card that is immediately preceded by another .card.  */
+.card + .card {
+	margin-top: 18px;
+}
+
+h1,
 h2 {
-	font-family: 'Cutive Mono', sans-serif;
-	text-align: right;
-	color: rgb(255, 255, 255);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	width: 50%;
-	padding: 10px;
-	transform: translateY(-455px);
-}
-p1 {
-	font-family: 'Cutive Mono', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	text-align: justify;
-	text-align-last: center;
-	color: rgb(255, 255, 255);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 50px;
-	padding: 5px;
-}
-p2 {
-	font-family: 'Cutive Mono', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	text-align: justify;
-	text-align-last: center;
-	color: rgb(255, 255, 255);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding: 5px;
-}
-p3 {
-	font-family: 'Cutive Mono', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	text-align: justify;
-	text-align-last: center;
-	color: rgb(255, 255, 255);
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	margin-left: 50px;
-	margin-right: 400px;
-	margin-top: 50px;
-	padding: 5px;
-}
-div1 {
-	font-size: 35px;
+	line-height: 1.2;
+	margin-bottom: 10px;
 }
 
-body .spec {
-	color: rgb(254, 239, 23);
-	font-family:
-		Cutive Mono Big,
-		monospace;
-	font-weight: 700;
-	font-style: normal;
-	font-size: larger;
-	text-align: center;
-	list-style-position: inside;
-}
-
-h1 {
-	font-family: 'Cutive Mono', monospace;
-	font-weight: 700;
-	font-style: normal;
-	text-align: center;
-	color: rgb(255, 252, 252);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-ul li {
-	font-family: 'Cutive Mono', monospace;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	list-style-position: inside;
-	justify-content: left;
-	align-items: left;
-}
 p {
-	font-family: 'Cutive Mono', monospace;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	justify-content: center;
+	margin-top: 10px;
+	color: var(--muted);
+}
+
+.lead {
+	margin-top: 8px;
+	color: var(--muted);
+}
+
+/* HOME layout */
+.hero {
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+	gap: 18px;
 	align-items: center;
+}
+
+.hero__media img {
+	width: 100%;
+	border-radius: 14px;
+	border: 1px solid var(--border);
+	display: block;
+}
+
+/* HOW TO lists */
+.recipe {
+	margin-top: 16px;
+	padding-left: 22px;
+}
+
+/* ol = numbers */
+.recipe ol,
+ol {
+	list-style-type: decimal;
+}
+
+/* ul = dots */
+.recipe ul,
+ul {
+	list-style-type: disc;
+}
+
+.recipe li {
+	margin: 12px 0;
+}
+
+.recipe ul {
+	margin-top: 8px;
+	padding-left: 18px;
+}
+
+.recipe ul li {
+	margin: 6px 0;
+	color: var(--muted);
+}
+
+/* Contact grid */
+.contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin-top: 14px;
+}
+
+a {
+	color: #ffffff;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/* Footer */
+.site-footer {
+	text-align: center;
+	padding: 18px 12px 28px;
+	color: var(--muted);
 }

@@ -1,64 +1,84 @@
+/* style_nav.css */
+/* CSS for the navigation bar, which is shared across all pages. This keeps the styles organized and separate from the general page styles in style.css.  */
+
+/* * universal selector to reset default margins and paddings, and set box-sizing to border-box for easier layout control.  */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+/* header styles are in style.css to keep the navigation-specific styles here. */
+.site-header {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #24252a;
-}
-.cutive-mono-regular {
-	font-family: 'Cutive Mono', monospace;
-	font-weight: 400;
-	font-style: normal;
-}
+	background: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
 
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+/* logo  */
 .logo {
-  margin-right: auto;
-  
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-right: auto;
+	text-decoration: none;
 }
 
+.logo-text {
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.logo img {
+	height: 44px;
+	width: auto;
+	display: block;
+}
+
+/* Center nav inside header */
 .nav__links {
-  list-style: none;
-  display: flex;
+	list-style: none;
+	display: flex;
+	gap: 18px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.nav__links a,
-.cta,
-.overlay__content a {
-  font-family: 'Cutive Mono', monospace;
-	font-weight: 400;
-  color: #edf0f1;
-  text-decoration: none;
+.nav__link {
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 999px;
+	text-decoration: none;
+
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.14);
+
+	transition:
+		background 0.2s ease,
+		transform 0.15s ease;
 }
 
-.nav__links li {
-  padding: 0px 20px;
+.nav__link:hover {
+	background: rgba(255, 255, 255, 0.14);
+	transform: translateY(-1px);
 }
 
-.nav__links li a {
-  transition: all 0.3s ease 0s;
+.nav__link.is-active {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.24);
 }
-
-.nav__links li a:hover {
-  color: #976f0890;
-}
-
-.cta {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: rgb(179, 150, 3);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.cta:hover {
-  background-color: rgb(179, 150, 3);
-}
-
