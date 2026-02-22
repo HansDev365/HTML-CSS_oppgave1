@@ -18,16 +18,12 @@ body {
 	background-attachment: fixed;
 }
 
-/* Make main content grow */
-.page {
-	flex: 1;
-}
-
 /* main container */
 .page {
 	max-width: 980px;
 	margin: 30px auto;
 	padding: 20px;
+	flex: 1;
 }
 
 /* cards */
