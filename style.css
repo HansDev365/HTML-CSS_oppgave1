@@ -5,7 +5,10 @@ body {
 	font-family: 'Cutive Mono', monospace;
 	color: #f6f7f9;
 	line-height: 1.6;
-
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	/* background image with dark overlay */
 	background-image:
 		linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -13,6 +16,11 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+}
+
+/* Make main content grow */
+.page {
+	flex: 1;
 }
 
 /* main container */
@@ -32,12 +40,15 @@ body {
 }
 
 /* headings */
+
 h1 {
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 h2 {
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 /* paragraphs */
@@ -120,4 +131,13 @@ a:hover {
 	text-align: center;
 	padding: 20px;
 	color: rgba(246, 247, 249, 0.8);
+}
+
+/* Center everything on Contact page */
+.page-contact .card {
+	text-align: center;
+}
+
+.page-contact .contact-grid {
+	justify-content: center;
 }
