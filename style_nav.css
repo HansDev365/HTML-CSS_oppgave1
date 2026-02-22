@@ -1,6 +1,5 @@
 /* style_nav.css */
 /* CSS for the navigation bar, which is shared across all pages. This keeps the styles organized and separate from the general page styles in style.css.  */
-
 /* * universal selector to reset default margins and paddings, and set box-sizing to border-box for easier layout control.  */
 * {
 	box-sizing: border-box;

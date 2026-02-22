@@ -1,113 +1,116 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Dorian Lewandowski" />
-  <title>Coffee Lovers | How To</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dorian Lewandowski" />
+    <title>Coffee Lovers | How To</title>
+    <!-- nav linksfor all pages -->
+    <link rel="stylesheet" href="style_nav.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style_nav.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet" />
 </head>
 
 <body class="page-howto">
-  <header class="site-header">
-    <a class="logo" href="index.html">
-      <img src="Logo.png" alt="Coffee Lovers logo" width="90" />
-      <span class="logo__text">Coffee Lovers</span>
-    </a>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="Logo.png" alt="Coffee Lovers logo" width="90" />
+            <span class="logo__text">Coffee Lovers</span>
+        </a>
 
-<!-- Main navigation is the same on all pages, but the active link is highlighted with the "is-active" class. This is controlled in style_nav.css. -->
-    <nav aria-label="Main navigation">
-      <ul class="nav__links">
-        <li><a class="nav__link" href="index.html">Home</a></li>
-        <li><a class="nav__link is-active" href="how_to.html">How To</a></li>
-        <li><a class="nav__link" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- Main navigation is the same on all pages, but the active link is highlighted with the "is-active" class. This is controlled in style_nav.css. -->
+        <nav aria-label="Main navigation">
+            <ul class="nav__links">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link is-active" href="how_to.html">How To</a></li>
+                <li><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-  </header>
+    </header>
+    <!-- Main Content Area -->
+    <main class="page">
+        <section class="card">
+            <h1>Coffee Recipe</h1>
+            <p class="lead">
+                Follow these steps for a clean, tasty brew. The main steps are numbered, and the tips are bullet points.
+            </p>
 
-  <main class="page">
-    <section class="card">
-      <h1>Coffee Recipe</h1>
-      <p class="lead">
-        Follow these steps for a clean, tasty brew. The main steps are numbered, and the tips are bullet points.
-      </p>
+            <!--ol = numbers, ul = dots (controlled in style.css) -->
+            <ol class="recipe">
+                <li>
+                    <!-- The <strong> tag in HTML is used to define text with strong importance, seriousness, or urgency -->
+                    <strong>Start with good beans</strong>
+                    <ul>
+                        <li>Choose fresh, high-quality whole beans (not pre-ground).</li>
+                        <li>Look for a roast date within the last 2–4 weeks.</li>
+                        <li>Store beans in an airtight container, away from heat and light.</li>
+                    </ul>
+                </li>
 
-      <!-- IMPORTANT: ol = numbers, ul = dots (controlled in style.css below) -->
-      <ol class="recipe">
-        <li>
-          <strong>Start with good beans</strong>
-          <ul>
-            <li>Choose fresh, high-quality whole beans (not pre-ground).</li>
-            <li>Look for a roast date within the last 2–4 weeks.</li>
-            <li>Store beans in an airtight container, away from heat and light.</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Use clean, fresh water</strong>
+                    <ul>
+                        <li>Use filtered water if your tap water tastes like chlorine.</li>
+                        <li>Use water at 90–96°C (195–205°F) — just off the boil.</li>
+                    </ul>
+                </li>
 
-        <li>
-          <strong>Use clean, fresh water</strong>
-          <ul>
-            <li>Use filtered water if your tap water tastes like chlorine.</li>
-            <li>Use water at 90–96°C (195–205°F) — just off the boil.</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Grind right before brewing</strong>
+                    <ul>
+                        <li>Coarse → French press</li>
+                        <li>Medium → Drip / pour-over</li>
+                        <li>Fine → Espresso</li>
+                        <li>Grinding fresh keeps aroma and flavor stronger.</li>
+                    </ul>
+                </li>
 
-        <li>
-          <strong>Grind right before brewing</strong>
-          <ul>
-            <li>Coarse → French press</li>
-            <li>Medium → Drip / pour-over</li>
-            <li>Fine → Espresso</li>
-            <li>Grinding fresh keeps aroma and flavor stronger.</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Measure your ratio</strong>
+                    <ul>
+                        <li>Start with 1 part coffee : 15–18 parts water (Example: 20 g coffee → 300 ml water).</li>
+                    </ul>
+                </li>
 
-        <li>
-          <strong>Measure your ratio</strong>
-          <ul>
-            <li>Start with 1 part coffee : 15–18 parts water (Example: 20 g coffee → 300 ml water).</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Brew with control</strong>
+                    <ul>
+                        <li>Pour-over: pour slowly in circles.</li>
+                        <li>French press: steep 4 minutes, then press.</li>
+                        <li>Espresso: extract in 25–30 seconds.</li>
+                        <li>Keep equipment clean for best taste.</li>
+                    </ul>
+                </li>
 
-        <li>
-          <strong>Brew with control</strong>
-          <ul>
-            <li>Pour-over: pour slowly in circles.</li>
-            <li>French press: steep 4 minutes, then press.</li>
-            <li>Espresso: extract in 25–30 seconds.</li>
-            <li>Keep equipment clean for best taste.</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Taste and adjust</strong>
+                    <ul>
+                        <li>Too bitter → use a coarser grind or less brew time.</li>
+                        <li>Too sour → use a finer grind or longer brew time.</li>
+                        <li>Adjust the coffee-to-water ratio to preference.</li>
+                    </ul>
+                </li>
 
-        <li>
-          <strong>Taste and adjust</strong>
-          <ul>
-            <li>Too bitter → use a coarser grind or less brew time.</li>
-            <li>Too sour → use a finer grind or longer brew time.</li>
-            <li>Adjust the coffee-to-water ratio to preference.</li>
-          </ul>
-        </li>
+                <li>
+                    <strong>Serve immediately</strong>
+                    <ul>
+                        <li>Coffee tastes best right after brewing.</li>
+                        <li>Pre-warm your cup to keep it hot longer.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
 
-        <li>
-          <strong>Serve immediately</strong>
-          <ul>
-            <li>Coffee tastes best right after brewing.</li>
-            <li>Pre-warm your cup to keep it hot longer.</li>
-          </ul>
-        </li>
-      </ol>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2024 Coffee Lovers. All rights reserved.</p>
-  </footer>
+    <footer class="site-footer">
+        <p>© 2026 Coffee Lovers. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
