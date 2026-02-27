@@ -36,11 +36,11 @@ body {
 	background-image:
 		radial-gradient(circle at top right, rgba(255, 196, 130, 0.22), transparent 34%),
 		linear-gradient(rgba(25, 18, 14, 0.8), rgba(25, 18, 14, 0.92)),
-		url("background-1536.jpg");
+		url("images/background-1536.jpg");
 	background-image:
 		radial-gradient(circle at top right, rgba(255, 196, 130, 0.22), transparent 34%),
 		linear-gradient(rgba(25, 18, 14, 0.8), rgba(25, 18, 14, 0.92)),
-		image-set(url("background-1536.avif") type("image/avif"), url("background-1536.jpg") type("image/jpeg"));
+		image-set(url("images/background-1536.avif") type("image/avif"), url("images/background-1536.jpg") type("image/jpeg"));
 	background-size: auto, auto, cover;
 	background-position: top right, center, center;
 	background-attachment: fixed;
@@ -237,11 +237,11 @@ a:focus-visible {
 		background-image:
 			radial-gradient(circle at top right, rgba(255, 196, 130, 0.22), transparent 34%),
 			linear-gradient(rgba(25, 18, 14, 0.8), rgba(25, 18, 14, 0.92)),
-			url("background-960.jpg");
+			url("images/background-960.jpg");
 		background-image:
 			radial-gradient(circle at top right, rgba(255, 196, 130, 0.22), transparent 34%),
 			linear-gradient(rgba(25, 18, 14, 0.8), rgba(25, 18, 14, 0.92)),
-			image-set(url("background-960.avif") type("image/avif"), url("background-960.jpg") type("image/jpeg"));
+			image-set(url("images/background-960.avif") type("image/avif"), url("images/background-960.jpg") type("image/jpeg"));
 	}
 
 	.hero {
