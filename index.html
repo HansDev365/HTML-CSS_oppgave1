@@ -9,24 +9,30 @@
   <!-- Css files for all pages: -->
   <link rel="stylesheet" href="style_nav.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preload" as="image" href="Coffee-800.avif" type="image/avif" fetchpriority="high" />
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body class="page-home">
   <header class="site-header">
     <a class="logo" href="index.html">
-      <img src="Logo.png" alt="Coffee Lovers logo" width="90" />
+      <picture>
+        <source type="image/avif" srcset="Logo-120.avif 120w, Logo-176.avif 176w" sizes="90px" />
+        <img src="Logo-176.png" srcset="Logo-120.png 120w, Logo-176.png 176w" sizes="90px" alt="Coffee Lovers logo"
+          width="90" height="60" loading="eager" decoding="async" />
+      </picture>
       <span class="logo__text">Coffee Lovers</span>
     </a>
 
     <nav aria-label="Main navigation">
       <ul class="nav__links">
         <li><a class="nav__link is-active" href="index.html">Home</a></li>
-        <li><a class="nav__link" href="how_to.html">How To</a></li>
-        <li><a class="nav__link" href="contact.html">Contact</a></li>
+        <li><a class="nav__link" href="How_to.html">How To</a></li>
+        <li><a class="nav__link" href="Contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -49,7 +55,14 @@
       </div>
       <!-- In HTML, the <figure> element is used to mark up self-contained content, such as illustrations, diagrams, photos, or code listings, often with an accompanying caption. The <img> element is used to embed an image in an HTML page. The "alt" attribute provides alternative text for the image, which is important for accessibility and SEO. The "loading" attribute with the value "lazy" tells the browser to defer loading the image until it is close to being visible on the screen, which can improve page load performance. -->
       <figure class="hero__media">
-        <img src="Coffee.png" alt="A cup of coffee on a wooden table with coffee beans." loading="lazy" />
+        <picture>
+          <source type="image/avif" srcset="Coffee-400.avif 400w, Coffee-600.avif 600w, Coffee-800.avif 800w"
+            sizes="(max-width: 860px) min(100vw - 32px, 620px), 42vw" />
+          <img src="Coffee-600.jpg" srcset="Coffee-400.jpg 400w, Coffee-600.jpg 600w, Coffee-800.jpg 800w"
+            sizes="(max-width: 860px) min(100vw - 32px, 620px), 42vw"
+            alt="A cup of coffee on a wooden table with coffee beans." width="600" height="900" loading="eager"
+            decoding="async" fetchpriority="high" />
+        </picture>
       </figure>
     </section>
 

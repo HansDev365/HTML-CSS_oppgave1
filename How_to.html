@@ -13,22 +13,38 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body class="page-howto">
     <header class="site-header">
         <a class="logo" href="index.html">
-            <img src="Logo.png" alt="Coffee Lovers logo" width="90" />
-            <span class="logo__text">Coffee Lovers</span>
-        </a>
+      <picture>
+        <source
+          type="image/avif"
+          srcset="Logo-120.avif 120w, Logo-176.avif 176w"
+          sizes="90px"
+        />
+        <img
+          src="Logo-176.png"
+          srcset="Logo-120.png 120w, Logo-176.png 176w"
+          sizes="90px"
+          alt="Coffee Lovers logo"
+          width="90"
+          height="60"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
+      <span class="logo__text">Coffee Lovers</span>
+    </a>
 
         <!-- Main navigation is the same on all pages, but the active link is highlighted with the "is-active" class. This is controlled in style_nav.css. -->
         <nav aria-label="Main navigation">
             <ul class="nav__links">
                 <li><a class="nav__link" href="index.html">Home</a></li>
-                <li><a class="nav__link is-active" href="how_to.html">How To</a></li>
-                <li><a class="nav__link" href="contact.html">Contact</a></li>
+                <li><a class="nav__link is-active" href="How_to.html">How To</a></li>
+                <li><a class="nav__link" href="Contact.html">Contact</a></li>
             </ul>
         </nav>
 
